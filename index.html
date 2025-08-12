@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hi there, I'm CollinsFabian 👋</title>
+  <meta name="description" content="CollinsFabian — software developer. Languages: PHP, Python, JavaScript, C#. Projects: Anony, Simulat, Erratic." />
+  <style>
+    /* Simple, modern responsive styles */
+    :root{
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #4f46e5;
+      --glass: rgba(255,255,255,0.03);
+      --radius: 12px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#081024 0%, #071021 60%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .container{
+      width:100%;
+      max-width:860px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .avatar{
+      width:72px;
+      height:72px;
+      border-radius:12px;
+      background:var(--glass);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:600;
+      font-size:22px;
+      color:var(--accent);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:-0.2px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:13px;
+      margin-top:6px;
+    }
+
+    .badges{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin:14px 0;
+      flex-wrap:wrap;
+    }
+    .section{
+      margin-top:16px;
+    }
+    h2{
+      font-size:16px;
+      margin:0 0 10px 0;
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    ul{
+      margin:0;
+      padding-left:18px;
+    }
+    li{
+      margin:6px 0;
+      color:#dbe8f9;
+    }
+
+    .stats{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .img-wrap{
+      background:rgba(255,255,255,0.02);
+      padding:8px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .contacts a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    .projects li a{
+      color:#a7f3d0;
+      text-decoration:none;
+    }
+
+    footer{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    /* Responsive */
+    @media (max-width:560px){
+      body{padding:18px}
+      .avatar{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="profile-title">
+    <header>
+      <div class="avatar" aria-hidden="true">CF</div>
+      <div>
+        <h1 id="profile-title">Hi there, I'm CollinsFabian 👋</h1>
+        <div class="sub">Passionate software developer — building things that matter.</div>
+      </div>
+    </header>
+
+    <div class="badges" aria-hidden="true">
+      <!-- Profile views badge -->
+      <div class="img-wrap">
+        <img src="https://komarev.com/ghpvc/?username=CollinsFabian&color=blue" alt="Profile views badge for CollinsFabian" />
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <h2>🚀 About Me</h2>
+      <p>I'm a passionate software developer with a keen interest in building impactful projects. I love learning new technologies and applying them to solve real-world problems.</p>
+    </section>
+
+    <section class="section" id="tech">
+      <h2>🔧 Technologies &amp; Tools</h2>
+      <ul>
+        <li><strong>Languages:</strong> PHP, Python, JavaScript, C#</li>
+        <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Node.js, Laravel</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      </ul>
+    </section>
+
+    <section class="section" id="stats">
+      <h2>📈 GitHub Stats</h2>
+      <div class="stats" role="img" aria-label="GitHub stats and top langs">
+        <div class="img-wrap" style="flex:1 1 100%;">
+          <img src="https://github-readme-stats-zi-urch.vercel.app/api?username=CollinsFabian&show_icons=true&theme=radical&cache_seconds=3600"
+               alt="CollinsFabian's GitHub stats" style="max-width:100%;height:auto;border-radius:8px;display:block" />
+        </div>
+
+        <div class="img-wrap" style="flex:1 1 320px;">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CollinsFabian&layout=compact&theme=radical&hide=css,html"
+               alt="Top languages used by CollinsFabian on GitHub" style="max-width:100%;height:auto;border-radius:8px;display:block" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contact">
+      <h2>📫 How to reach me</h2>
+      <ul>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377" target="_blank" rel="noopener noreferrer">CollinsFabian</a></li>
+        <li>Email: <a href="mailto:alphaalive22@gmail.com">alphaalive22@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section class="section projects" id="projects">
+      <h2>💼 Projects</h2>
+      <p>Here are some of my notable projects:</p>
+      <ul>
+        <li><a href="https://github.com/CollinsFabian/Anony" target="_blank" rel="noopener noreferrer">Anony</a>: A "secret" messaging platform. Have people send you messages they wouldn't normally send you.</li>
+        <li><a href="https://github.com/CollinsFabian/Simulat" target="_blank" rel="noopener noreferrer">Simulat</a>: Text-based RPG games.</li>
+        <li><a href="https://github.com/CollinsFabian/Erratic" target="_blank" rel="noopener noreferrer">Erratic</a>: A forum for blogging and chatting.</li>
+      </ul>
+    </section>
+
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:20px 0" />
+
+    <footer>
+      <div>Feel free to reach out if you want to collaborate on any project or just say hi! 😊</div>
+      <div style="opacity:0.9">Rendered from Markdown → HTML</div>
+    </footer>
+  </main>
+</body>
+</html>
