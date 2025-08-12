@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - CollinsFabian</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - CollinsFabian</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="CollinsFabian" class="profile-pic">
-            <h1>Hi there, I'm <span>CollinsFabian</span> 👋</h1>
-            <p class="tagline">Building impactful projects & solving real-world problems</p>
-            <button id="theme-toggle">🌙</button>
-        </div>
-    </header>
+  <canvas id="particleCanvas"></canvas>
 
-    <main>
-        <section class="about">
-            <h2>🚀 About Me</h2>
-            <p>
-                I'm a passionate software developer with a keen interest in building impactful projects.  
-                I love learning new technologies and applying them to solve real-world problems.  
-                When I'm not coding, I explore tech trends, work on side projects, and connect with like-minded innovators.
-            </p>
-        </section>
+  <header>
+    <button id="themeToggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
 
-        <section class="skills">
-            <h2>🔧 Technologies & Tools</h2>
-            <ul>
-                <li><b>Languages:</b> PHP, Python, JavaScript, C#</li>
-                <li><b>Web Development:</b> HTML, CSS, ReactJS, Node.js, Laravel</li>
-                <li><b>Databases:</b> MySQL, MongoDB</li>
-            </ul>
-        </section>
+  <main>
+    <section class="intro">
+      <img src="images/profile.jpg" alt="CollinsFabian" class="profile-pic">
+      <h1>Hi, I'm <span>CollinsFabian</span> 👋</h1>
+      <p>A passionate software developer building impactful and creative projects.</p>
+    </section>
 
-        <section class="projects">
-            <h2>💼 Projects</h2>
-            <ul>
-                <li><a href="https://github.com/CollinsFabian/Anony" target="_blank">Anony</a> - A "secret" messaging platform.</li>
-                <li><a href="https://github.com/CollinsFabian/Simulat" target="_blank">Simulat</a> - Text-based RPG games.</li>
-                <li><a href="https://github.com/CollinsFabian/Erratic" target="_blank">Erratic</a> - Forum for blogging and chatting.</li>
-            </ul>
-        </section>
+    <section class="about">
+      <h2>🚀 About Me</h2>
+      <p>I specialize in crafting applications that solve real-world problems, blending creativity with solid technical skills.</p>
+      <p>I enjoy working with PHP, JavaScript, Python, and exploring modern frameworks.</p>
+    </section>
 
-        <section class="contact">
-            <h2>📫 Contact Me</h2>
-            <p>
-                LinkedIn: <a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377" target="_blank">CollinsFabian</a><br>
-                Email: <a href="mailto:alphaalive22@gmail.com">alphaalive22@gmail.com</a>
-            </p>
-        </section>
-    </main>
+    <section class="skills">
+      <h2>🔧 Skills & Tools</h2>
+      <ul>
+        <li><strong>Languages:</strong> PHP, Python, JavaScript, C#</li>
+        <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Node.js, Laravel</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      </ul>
+    </section>
 
-    <footer>
-        <p>© 2025 CollinsFabian. All Rights Reserved.</p>
-    </footer>
+    <section class="contact">
+      <h2>📫 Get in Touch</h2>
+      <p>Email: <a href="mailto:alphaalive22@gmail.com">alphaalive22@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377" target="_blank">CollinsFabian</a></p>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2025 CollinsFabian. Built with ❤️</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
