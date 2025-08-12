@@ -2,7 +2,7 @@
 title: Urchmann's Corner
 description: "Where code meets vibes."
 url: "https://collinsfabian.github.io" # your GitHub Pages URL
-baseurl: "" # empty for username.github.io
+baseurl: "/index.html" # empty for username.github.io
 
 # Author info
 author:
