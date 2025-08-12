@@ -69,10 +69,20 @@ function animate() {
   updateParticles(mouse);
   requestAnimationFrame(animate);
 }
-
 animate();
 
 window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
+const profilePic = document.querySelector('.profile-pic');
+profilePic.addEventListener('mousemove', (e) => {
+  const { width, height, left, top } = profilePic.getBoundingClientRect();
+  const x = e.clientX - left - width / 2;
+  const y = e.clientY - top - height / 2;
+  const rotateX = (y / height) * 10; // vertical tilt
+  const rotateY = (x / width) * -10; // horizontal tilt
+  profilePic.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+});
+profilePic.addEventListener('mouseleave', () => { profilePic.style.transform = 'rotateX(0) rotateY(0) scale(1)' });
