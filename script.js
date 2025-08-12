@@ -1,20 +1,11 @@
-// Animate on scroll
-document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const options = { threshold: 0.1 };
+// Theme toggle
+document.getElementById('toggle-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+});
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = "translateY(0)";
-            }
-        });
-    }, options);
-
-    sections.forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = "translateY(20px)";
-        observer.observe(section);
-    });
+// Mouse tracking animation
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', e => {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
 });
