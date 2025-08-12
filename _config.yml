@@ -1,0 +1,46 @@
+# Site settings
+title: Urchmann's Corner
+description: "Where code meets vibes."
+url: "https://collinsfabian.github.io" # your GitHub Pages URL
+baseurl: "" # empty for username.github.io
+
+# Author info
+author:
+  name: Urchmann
+  email: alphaalive22@example.com
+  github: CollinsFabian
+  twitter: Zi
+
+# Theme (you can change if you want a different style)
+theme: minima
+
+# Social links for minima theme
+minima:
+  social_links:
+    github: CollinsFabian
+    twitter: Zi
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins allowed by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Optional: Pagination settings (if you blog)
+paginate: 5
+paginate_path: "/page:num"
+
+# Exclude these files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - yarn.lock
+
+# Timezone
+timezone: Africa/Lagos
