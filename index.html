@@ -1,209 +1,121 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hi there, I'm CollinsFabian 👋</title>
-  <meta name="description" content="CollinsFabian — software developer. Languages: PHP, Python, JavaScript, C#. Projects: Anony, Simulat, Erratic." />
-  <style>
-    /* Theme variables */
-    :root {
-      --bg-gradient: linear-gradient(180deg, #f0f4ff 0%, #d9e3f0 60%);
-      --glass-bg: rgba(255,255,255,0.6);
-      --text-color: #111827;
-      --muted-color: #6b7280;
-      --accent: #4f46e5;
-      --avatar-bg: #4f46e5;
-    }
-    [data-theme="dark"] {
-      --bg-gradient: linear-gradient(180deg,#081024 0%, #071021 60%);
-      --glass-bg: rgba(255,255,255,0.03);
-      --text-color: #e6eef6;
-      --muted-color: #9aa4b2;
-      --accent: #818cf8;
-      --avatar-bg: rgba(129,140,248,0.15);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collins Fabian - Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0d1117;
+            --bg-light: #f8f9fa;
+            --text-dark: #c9d1d9;
+            --text-light: #212529;
+            --primary: #4e9eff;
+            --accent: #f39c12;
+        }
 
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: var(--bg-gradient);
-      color: var(--text-color);
-      line-height: 1.5;
-      padding: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.4s, color 0.4s;
-    }
-    .container {
-      width: 100%;
-      max-width: 860px;
-      background: var(--glass-bg);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-radius: 12px;
-      padding: 28px;
-      box-shadow: 0 6px 30px rgba(2,6,23,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: background 0.4s;
-    }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
 
-    header {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 18px;
-    }
-    .avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 12px;
-      background: var(--avatar-bg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 22px;
-      color: var(--accent);
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-    h1 {
-      margin: 0;
-      font-size: 20px;
-    }
-    .sub {
-      color: var(--muted-color);
-      font-size: 13px;
-      margin-top: 6px;
-    }
-    button.theme-toggle {
-      margin-left: auto;
-      background: none;
-      border: 1px solid var(--muted-color);
-      color: var(--text-color);
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s, color 0.3s, border-color 0.3s;
-    }
-    button.theme-toggle:hover {
-      background: var(--accent);
-      color: white;
-      border-color: var(--accent);
-    }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
 
-    h2 {
-      font-size: 16px;
-      margin-top: 20px;
-    }
-    ul {
-      padding-left: 18px;
-    }
-    li {
-      margin: 6px 0;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .stats img {
-      max-width: 100%;
-      border-radius: 8px;
-      display: block;
-    }
-    .stats {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-    .img-wrap {
-      background: rgba(255,255,255,0.04);
-      padding: 8px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.03);
-    }
-    hr {
-      border: none;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      margin: 20px 0;
-    }
-    footer {
-      font-size: 13px;
-      color: var(--muted-color);
-    }
-    @media (max-width:560px) {
-      body { padding: 18px; }
-      .avatar { width: 56px; height: 56px; }
-    }
-  </style>
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: .5rem;
+        }
+
+        header p {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            border-left: 4px solid var(--primary);
+            padding-left: .5rem;
+            margin-top: 2rem;
+        }
+
+        ul {
+            padding-left: 1rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <div class="avatar">CF</div>
-      <div>
-        <h1>Hi there, I'm CollinsFabian 👋</h1>
-        <div class="sub">Passionate software developer — building things that matter.</div>
-      </div>
-      <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
-    </header>
 
-    <p><img src="https://komarev.com/ghpvc/?username=CollinsFabian&color=blue" alt="Profile views badge"></p>
+<header>
+    <h1>👋 Hi, I'm Collins Fabian</h1>
+    <p>Software Developer | Problem Solver | Tech Explorer</p>
+</header>
 
+<section>
     <h2>🚀 About Me</h2>
-    <p>I'm a passionate software developer with a keen interest in building impactful projects. I love learning new technologies and applying them to solve real-world problems.</p>
+    <p>
+        I'm a passionate software developer with a deep love for creating impactful digital experiences.
+        My journey in tech is driven by curiosity and the thrill of building solutions that make life easier.
+    </p>
+</section>
 
-    <h2>🔧 Technologies &amp; Tools</h2>
+<section>
+    <h2>🔧 Skills & Tools</h2>
     <ul>
-      <li><strong>Languages:</strong> PHP, Python, JavaScript, C#</li>
-      <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Node.js, Laravel</li>
-      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+        <li><strong>Languages:</strong> PHP, Python, JavaScript, C#</li>
+        <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Node.js, Laravel</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
     </ul>
+</section>
 
-    <h2>📈 GitHub Stats</h2>
-    <div class="stats">
-      <div class="img-wrap" style="flex:1 1 100%;">
-        <img src="https://github-readme-stats-zi-urch.vercel.app/api?username=CollinsFabian&show_icons=true&theme=radical&cache_seconds=3600" alt="GitHub stats">
-      </div>
-      <div class="img-wrap" style="flex:1 1 320px;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CollinsFabian&layout=compact&theme=radical&hide=css,html" alt="Top languages">
-      </div>
-    </div>
-
-    <h2>📫 How to reach me</h2>
+<section>
+    <h2>💼 Featured Projects</h2>
     <ul>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377">CollinsFabian</a></li>
-      <li>Email: <a href="mailto:alphaalive22@gmail.com">alphaalive22@gmail.com</a></li>
+        <li><a href="https://github.com/CollinsFabian/Anony">Anony</a> - Anonymous messaging platform.</li>
+        <li><a href="https://github.com/CollinsFabian/Simulat">Simulat</a> - Text-based RPG games.</li>
+        <li><a href="https://github.com/CollinsFabian/Erratic">Erratic</a> - Forum for blogging and chatting.</li>
     </ul>
+</section>
 
-    <h2>💼 Projects</h2>
-    <ul>
-      <li><a href="https://github.com/CollinsFabian/Anony">Anony</a>: A "secret" messaging platform.</li>
-      <li><a href="https://github.com/CollinsFabian/Simulat">Simulat</a>: Text-based RPG games.</li>
-      <li><a href="https://github.com/CollinsFabian/Erratic">Erratic</a>: A forum for blogging and chatting.</li>
-    </ul>
+<section>
+    <h2>📫 Let's Connect</h2>
+    <p>
+        <a href="mailto:alphaalive22@gmail.com">Email Me</a> |
+        <a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377">LinkedIn</a> |
+        <a href="https://github.com/CollinsFabian">GitHub</a>
+    </p>
+</section>
 
-    <hr>
-    <footer>Feel free to reach out if you want to collaborate or just say hi! 😊</footer>
-  </main>
+<footer>
+    &copy; 2025 Collins Fabian. Built with ❤️ and endless coffee.
+</footer>
 
-  <script>
-    const themeToggle = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      themeToggle.textContent = savedTheme === 'dark' ? '🌙 Dark' : '☀️ Light';
-    }
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      themeToggle.textContent = newTheme === 'dark' ? '🌙 Dark' : '☀️ Light';
-    });
-  </script>
 </body>
 </html>
