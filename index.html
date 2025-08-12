@@ -1,151 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CollinsFabian | About Me</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: #fff;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-top: 50px;
-      animation: fadeIn 1s ease-out;
-    }
-
-    header img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid rgba(255, 255, 255, 0.4);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      animation: popIn 0.8s ease-out;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-top: 20px;
-    }
-
-    h2 {
-      font-weight: 300;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    section {
-      max-width: 800px;
-      margin-top: 40px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      backdrop-filter: blur(10px);
-      animation: fadeUp 1s ease-out;
-    }
-
-    section h3 {
-      margin-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #4dd0e1;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    a:hover {
-      color: #81ecec;
-    }
-
-    footer {
-      margin-top: 40px;
-      opacity: 0.7;
-      font-size: 0.9rem;
-      animation: fadeIn 2s ease-out;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes popIn {
-      0% { transform: scale(0.8); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 1.6rem; }
-      section { padding: 15px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollinsFabian - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-gradient"></div>
 
-  <header>
-    <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Profile Picture">
-    <h1>Hi, I'm CollinsFabian 👋</h1>
-    <h2>Passionate Software Developer</h2>
-  </header>
+    <header>
+        <div class="profile-pic">
+            <img src="profile.jpg" alt="CollinsFabian">
+        </div>
+        <h1>Hi there, I'm <span class="highlight">CollinsFabian</span> 👋</h1>
+        <p class="tagline">Passionate software developer turning ideas into impactful solutions 🚀</p>
+    </header>
 
-  <section>
-    <h3>🚀 About Me</h3>
-    <p>I'm a passionate software developer with a keen interest in building impactful projects. I love learning new technologies and applying them to solve real-world problems. My goal is to create solutions that are both functional and delightful to use.</p>
-  </section>
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a versatile developer with experience across multiple languages and frameworks. 
+                I enjoy building projects that solve real-world problems, exploring new technologies, 
+                and collaborating with others to push creative boundaries.
+            </p>
+            <p>
+                Outside coding, I love reading about tech trends, mentoring newcomers, and experimenting 
+                with innovative ideas that could shape the future of software.
+            </p>
+        </section>
 
-  <section>
-    <h3>🔧 Technologies & Tools</h3>
-    <ul>
-      <li><strong>Languages:</strong> PHP, Python, JavaScript, C#</li>
-      <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Node.js, Laravel</li>
-      <li><strong>Databases:</strong> MySQL, MongoDB</li>
-    </ul>
-  </section>
+        <section class="skills">
+            <h2>Technologies & Tools</h2>
+            <ul>
+                <li><strong>Languages:</strong> PHP, Python, JavaScript, C#</li>
+                <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Node.js, Laravel</li>
+                <li><strong>Databases:</strong> MySQL, MongoDB</li>
+            </ul>
+        </section>
 
-  <section>
-    <h3>💼 Notable Projects</h3>
-    <ul>
-      <li><a href="https://github.com/CollinsFabian/Anony" target="_blank">Anony</a>: A "secret" messaging platform.</li>
-      <li><a href="https://github.com/CollinsFabian/Simulat" target="_blank">Simulat</a>: Text-based RPG games.</li>
-      <li><a href="https://github.com/CollinsFabian/Erratic" target="_blank">Erratic</a>: Forum for blogging & chatting.</li>
-    </ul>
-  </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Anony</h3>
+                    <p>Anonymous messaging platform where people can send messages they wouldn’t normally share.</p>
+                    <a href="https://github.com/CollinsFabian/Anony" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Simulat</h3>
+                    <p>Text-based RPG game bringing interactive storytelling to life.</p>
+                    <a href="https://github.com/CollinsFabian/Simulat" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Erratic</h3>
+                    <p>A forum platform for blogging and chatting with a vibrant community.</p>
+                    <a href="https://github.com/CollinsFabian/Erratic" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
 
-  <section>
-    <h3>📫 Connect With Me</h3>
-    <ul>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377" target="_blank">CollinsFabian</a></li>
-      <li>Email: <a href="mailto:alphaalive22@gmail.com">alphaalive22@gmail.com</a></li>
-    </ul>
-  </section>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Let's collaborate or just have a chat!</p>
+            <ul>
+                <li><a href="mailto:alphaalive22@gmail.com">Email Me</a></li>
+                <li><a href="https://www.linkedin.com/in/uchenna-collins-onuegbu-69b781377" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/CollinsFabian" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
 
-  <footer>
-    &copy; 2025 CollinsFabian. Built with ❤️ and endless cups of coffee ☕.
-  </footer>
+    <footer>
+        <p>© 2025 CollinsFabian. All rights reserved.</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
