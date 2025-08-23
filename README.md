@@ -1,1 +1,1 @@
-[Home](https:/collinsfabian.github.io)
+[Home](https://collinsfabian.github.io)
